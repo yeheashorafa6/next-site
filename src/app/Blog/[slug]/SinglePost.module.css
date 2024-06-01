@@ -1,0 +1,72 @@
+.container{
+    display: flex;
+    gap: 100px;
+}
+
+.postImage{
+    /* flex: 1; */
+    /* width: 80%; */
+    position: relative;
+    height: calc(100vh - 200px);
+}
+
+.postImage image{
+    object-fit: cover !important;
+}
+
+.postContent{
+    flex: 2;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 45px;
+    
+}
+
+.details{
+    display: flex;
+    gap: 10px;
+}
+.detalText{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.detailTitle{
+    color: #5e97c9 !important;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.detailValue{
+    color: lightgray !important;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.avatar{
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.desc{
+    line-height: 2rem !important;
+}
+
+.siglePostLink{
+    color: blue !important;
+
+}
+
+.siglePostIcon{
+    width: 20px !important;
+    transition: all .6s  ease-in-out;
+}
+
+.siglePostLink:hover .siglePostIcon{
+    margin-left: 10px;
+}

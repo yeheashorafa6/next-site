@@ -1,0 +1,20 @@
+.form{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.form .formControl{
+    padding: 12px !important;
+    border-radius: 10px !important;
+    background-color: var(--bgSoft) !important;
+}
+
+.form button[type="submit"]{
+    padding: 12px !important;
+    border-radius: 10px !important;
+    background-color: var(--btn) !important;
+    color: var(--text)!important;
+    font-size: 20px!important;
+    margin-top: 10px!important;
+}

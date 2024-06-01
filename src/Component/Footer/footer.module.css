@@ -1,0 +1,11 @@
+.copyright p span{
+    text-align: center;
+    margin-left: 5px;
+}
+.name{
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.name:hover{
+    color: #fa4;
+}

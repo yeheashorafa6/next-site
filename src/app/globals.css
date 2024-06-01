@@ -1,0 +1,82 @@
+:root{
+    --bg : #0d0c22;
+    --text : white;
+    --btn : #3673fd;
+    --bgSoft : #2d2b42;
+    --textSoft : #e5e5e5;
+
+}
+body{
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+ul , li{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+
+button{
+    border: 0;
+    box-shadow: none;
+    outline: none !important;
+}
+input , textarea{
+    border: 0 !important;
+    box-shadow: none;
+    outline: none !important;
+    color: white !important;
+    font-size: 20px;
+}
+
+input::placeholder , textarea::placeholder{
+    color: white !important;
+}
+
+input:focus  ,textarea:focus{
+    border:1px solid #ffffff !important ;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+image{
+    object-fit: contain !important;
+}
+
+.container{
+    max-width: 1536px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-top: 1rem; */
+}
+
+@media(min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 814px !important;
+    }
+}
+@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 960px !important;
+    }
+}
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1140px !important;
+    }
+}
+

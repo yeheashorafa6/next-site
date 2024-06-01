@@ -1,0 +1,31 @@
+.heroSection{
+    display: flex;
+    /* align-items: center; */
+    gap: 50px;
+    overflow-x: hidden;
+}
+
+.heroContent h1{
+    font-size: 45px;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.heroContent p{
+    font-size: 16px;
+    color: var(--textSoft);
+}
+
+.heroButton .btn{
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 10px;
+    background: var(--text);
+    color: var(--bg);
+
+}
+.heroButton .btn:first-child{
+   background-color: rgb(89, 132, 147) !important;
+   color: white !important;
+}

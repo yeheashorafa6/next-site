@@ -1,0 +1,78 @@
+.navItems{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.nav-item{
+    display: inline-block;
+}
+.btnLogout{
+    color: black;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.menuBtn span, .mobileLink{
+    display: none;
+}
+
+@media(max-width : 795px) {
+    .navItems{
+        display: none !important;
+    }
+    .menuBtn{
+        box-shadow: none !important;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+        /* z-index: 9999; */
+    }
+    .menuBtn span{
+        background: white;
+        color: white;
+        display: block;
+        width: 30px;
+        height: 2px;
+        position: relative;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    .menuBtn span::after , .menuBtn span::before{
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: white;
+    width: 30px;
+    height: 2px;
+    content: '';
+    cursor: pointer;
+    }
+
+    .menuBtn span::after{
+        bottom: -8px;
+    }
+    .menuBtn span::before{
+        top: -8px;
+    }
+
+    .mobileLink{
+        top: 0px;
+        right: 0px;
+        position: fixed;
+        width: 30%;
+        height: 100vh ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: all.5s ease;
+        background-color: rgba(0, 0, 0, 0.24);
+    
+    }
+    
+}
